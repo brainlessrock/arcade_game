@@ -7,6 +7,12 @@ public class PlayerMovement : MonoBehaviour
     {
         InputManager.Instance.OnMove += movePlayer;
     }
+
+    public void OnDisable()
+    {
+        InputManager.Instance.OnMove -= movePlayer;
+    }
+
     public void Update()
     {
 
