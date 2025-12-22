@@ -175,7 +175,7 @@ GameObject:
   - component: {fileID: 786188935}
   - component: {fileID: 786188934}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -323,6 +323,7 @@ GameObject:
   - component: {fileID: 1500985243}
   - component: {fileID: 1500985242}
   - component: {fileID: 1500985241}
+  - component: {fileID: 1500985245}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -448,6 +449,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1500985245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500985240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0a0f66ebbe24006a8e95bc26aa3529, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraFollow
+  player: {fileID: 786188936}
+  camOffset: {x: 0, y: 0, z: -10}
+  smoothSpeed: 10
 --- !u!1 &1736488102
 GameObject:
   m_ObjectHideFlags: 0
